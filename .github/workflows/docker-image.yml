@@ -15,18 +15,18 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v3.1.1
-      with:
-        node-version: '12'
+    # - name: Setup Node.js environment
+    #   uses: actions/setup-node@v3.1.1
+    #   with:
+    #     node-version: '12'
 
-    - name: Install application dependecies
-      run: npm install
-    - name: Setup application postinstall
-      run: npm run postinstall
+    # - name: Install application dependecies
+    #   run: npm install
+    # - name: Setup application postinstall
+    #   run: npm run postinstall
       
-    - name: Run test
-      run: npm run test
+    # - name: Run test
+    #   run: npm run test
 
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
